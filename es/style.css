@@ -1,0 +1,29 @@
+/*
+
+	Theme Name: 
+	Description: Responsive Corporate xHTML template 
+	Version: 1.0.0
+	
+	-
+	
+*/
+
+	@import url('_layout/base.css');
+	@import url('_layout/grid.css');
+	@import url('_layout/layout.css');
+	
+	/* If you want the layout to be boxed uncomment the line below */
+
+/* @import url('_layout/boxed.css');  */
+	
+	/* Choose a skin */
+
+/* @import url('_layout/skins/red.css');    */
+
+/* @import url('_layout/skins/green.css');   */
+
+/* @import url('_layout/skins/purple.css');  */
+
+/* @import url('_layout/skins/orange.css');  */
+
+
