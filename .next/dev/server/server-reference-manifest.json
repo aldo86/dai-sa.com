@@ -1,0 +1,26 @@
+{
+  "node": {
+    "4043bb8e4af86ec659d8ed00ce19e45c59ea977582": {
+      "workers": {
+        "app/(payload)/admin/[[...segments]]/page": {
+          "moduleId": "[project]/.next-internal/server/app/(payload)/admin/[[...segments]]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(payload)/layout.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/node_modules/@payloadcms/next/dist/layouts/Root/index.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true
+        }
+      },
+      "filename": "src/app/(payload)/layout.tsx",
+      "exportedName": "$$RSC_SERVER_ACTION_0"
+    },
+    "6037d89f9071b8a6bd8d4b63daa2af327e4b39feba": {
+      "workers": {
+        "app/(payload)/admin/[[...segments]]/page": {
+          "moduleId": "[project]/.next-internal/server/app/(payload)/admin/[[...segments]]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/app/(payload)/layout.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/node_modules/@payloadcms/next/dist/layouts/Root/index.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true
+        }
+      },
+      "filename": "node_modules/@payloadcms/next/dist/layouts/Root/index.js",
+      "exportedName": "$$RSC_SERVER_ACTION_0"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "5m28XdA7AI0B1vRJ8HPBUl8llDvnUv8cGKJ4nPr84W4="
+}

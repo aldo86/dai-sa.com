@@ -1,0 +1,70 @@
+
+.fullwidthbanner-container{
+	width:100% !important;
+	position:relative;
+	padding:0;
+	max-height:500px !important;
+	height:500px !important;
+	overflow:hidden;
+	margin-bottom:0;
+}
+
+
+.rs-slidetext{ background-color: rgba(0,0,0,0.6); color: #aeb0b3; width:315px; height:230px; }
+.rs-slidetext-title{ color:#ffffff; font-size:22px !important; line-height:20px !important; font-weight:600 !important;	border-left:3px solid #0099CB; padding:15px 25px; padding-left:40px; white-space:normal; width:247px; }
+.rs-slidetext-text,
+.rs-slidetext-button{ color:#aeb0b3; width:240px !important; overflow:hidden; white-space:normal; font-size:12px !important; line-height:20px !important;  padding-left:43px !important; }
+
+/*  #Tablet (Portrait)
+==================================================================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	.rs-slidetext,
+	.rs-slidetext-title,
+	.rs-slidetext-text{ margin-left:70px; }
+
+	.text-right{ text-align:right; }
+	
+}
+	
+/*  #Mobile (Portrait)
+==================================================================================================== */
+
+@media only screen and (max-width: 767px) {
+	
+	.text-right{ text-align:right; }
+	
+	.rs-slidetext,
+	.rs-slidetext-title,
+	.rs-slidetext-text,
+	.rs-slidetext-button{ margin-left:70px; }
+	
+	.rs-slidetext{ width:280px !important;  margin-top:40px; }
+	.rs-slidetext-title{ width:212px !important;  margin-top:60px;  }
+	.rs-slidetext-text{ width:205px !important;  margin-top:60px; }
+	.rs-slidetext-button{ width:205px !important; margin-top:80px; }
+	
+	.rs-slidetext-text{ padding-top:20px; }
+	.rs-slidetext-button{ padding-top:60px; }
+
+	
+}
+	
+/*  #Mobile (Landscape)
+==================================================================================================== */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	.rs-slidetext,
+	.rs-slidetext-title,
+	.rs-slidetext-text,
+	.rs-slidetext-button{  }
+	
+	.rs-slidetext-title{ width:212px !important;  margin-top:50px; }
+	.rs-slidetext-text{ width:205px !important;  margin-top:50px; }
+	.rs-slidetext-button{ width:205px !important; margin-top:60px; }
+	
+		
+}
+
