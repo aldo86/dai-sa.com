@@ -11,7 +11,7 @@ export const Media: CollectionConfig = {
   },
   access: { read: () => true, create: administrator, update: administrator, delete: administrator },
   upload: {
-    staticDir: process.env.MEDIA_DIR || path.resolve("../.daisa-data/media"),
+    staticDir: process.env.MEDIA_DIR || path.resolve(".daisa-data/media"),
     mimeTypes: ["image/jpeg", "image/png", "image/webp"],
     pasteURL: false,
     focalPoint: true,
