@@ -11,7 +11,7 @@ import { Services, Projects } from "./collections/content";
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 const secret = process.env.PAYLOAD_SECRET;
-if (!secret || secret.length < 32) throw new Error("Set PAYLOAD_SECRET to at least 32 random characters in web/.env.");
+if (!secret || secret.length < 32) throw new Error("Set PAYLOAD_SECRET to at least 32 random characters in .env.");
 
 export default buildConfig({
   secret,
@@ -20,7 +20,7 @@ export default buildConfig({
   collections: [Users, Media, Services, Projects],
   localization: { locales: ["en", "es"], defaultLocale: "en", fallback: false },
   db: sqliteAdapter({
-    client: { url: process.env.DATABASE_URL || "file:../.daisa-data/development.db" },
+    client: { url: process.env.DATABASE_URL || "file:./.daisa-data/development.db" },
     migrationDir: path.resolve(dirname, "migrations"),
     push: process.env.NODE_ENV !== "production",
   }),
