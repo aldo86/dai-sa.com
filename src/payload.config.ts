@@ -8,6 +8,7 @@ import sharp from "sharp";
 import { Users } from "./collections/Users";
 import { Media } from "./collections/Media";
 import { Services, Projects } from "./collections/content";
+import { resolvePayloadDatabaseURL } from "./lib/database-url";
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 const secret = process.env.PAYLOAD_SECRET;
@@ -20,7 +21,7 @@ export default buildConfig({
   collections: [Users, Media, Services, Projects],
   localization: { locales: ["en", "es"], defaultLocale: "en", fallback: false },
   db: sqliteAdapter({
-    client: { url: process.env.DATABASE_URL || "file:./.daisa-data/development.db" },
+    client: { url: resolvePayloadDatabaseURL(process.env) },
     migrationDir: path.resolve(dirname, "migrations"),
     push: process.env.NODE_ENV !== "production",
   }),

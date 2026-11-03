@@ -1,5 +1,7 @@
 .DS_Store
 .daisa-data/
+/public/assets/*
+!/public/assets/.gitkeep
 node_modules/
 .env
 .env.*
