@@ -1,5 +1,6 @@
 .DS_Store
 .daisa-data/
+node_modules
 .env
 .env.*
 !.env.example
