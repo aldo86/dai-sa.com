@@ -119,7 +119,8 @@ test("admin writes and previews require authentication", async ({ page, request 
   expect(bootstrap.status()).toBeGreaterThanOrEqual(400);
   await page.goto("/admin");
   await expect(page.locator("body")).not.toContainText("Internal Server Error");
-  await expect(page.getByRole("heading", { name: /welcome|login|log in|create.*user/i })).toBeVisible();
+  await expect(page.getByRole("textbox", { name: "Email *", exact: true })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Login", exact: true })).toBeVisible();
 });
 
 test("contact rejects invalid requests and does not fake delivery without SMTP", async ({ request }) => {
