@@ -3,6 +3,7 @@ import { withPayload } from "@payloadcms/next/withPayload";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  allowedDevOrigins: ["b0mlb0pv0f.preview.c24.airoapp.ai"],
   images: { qualities: [75, 90] },
   async redirects() {
     const pages = {

@@ -9,6 +9,7 @@ import { Users } from "./collections/Users";
 import { Media } from "./collections/Media";
 import { Services, Projects } from "./collections/content";
 import { resolvePayloadDatabaseURL } from "./lib/database-url";
+import { migrations } from "./migrations";
 
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 const secret = process.env.PAYLOAD_SECRET;
@@ -23,6 +24,7 @@ export default buildConfig({
   db: sqliteAdapter({
     client: { url: resolvePayloadDatabaseURL(process.env) },
     migrationDir: path.resolve(dirname, "migrations"),
+    prodMigrations: migrations,
     push: process.env.NODE_ENV !== "production",
   }),
   email: process.env.SMTP_HOST ? nodemailerAdapter({
