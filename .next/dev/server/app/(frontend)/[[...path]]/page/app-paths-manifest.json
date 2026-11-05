@@ -1,3 +1,0 @@
-{
-  "/(frontend)/[[...path]]/page": "app/(frontend)/[[...path]]/page.js"
-}
